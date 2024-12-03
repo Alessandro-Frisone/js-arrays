@@ -12,7 +12,7 @@ const teachers = [
 // e salva il risultato nella variabile reversedTeachers
 const reversedTeachers = [];
 for (let i = teachers.length - 1; i >= 0; i--){
-  console.log(teachers[i])
+  console.log(teachers[i]);
 }
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
@@ -21,4 +21,5 @@ const longNames = teachers.filter(name => name.length >= 5);
 console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
-
+teachers.splice(1, 1);
+console.log(teachers);
