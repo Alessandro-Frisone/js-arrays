@@ -10,7 +10,7 @@ const teachers = [
 
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
 // e salva il risultato nella variabile reversedTeachers
-const reversedTeachers = [...teachers].reverse();
+const reversedTeachers = teachers.slice().reverse();
 console.log( reversedTeachers);
 
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
@@ -19,4 +19,4 @@ const longNames = teachers.filter(name => name.length >= 5);
 console.log(longNames);
 
 // 3. Rimuovi 'Ed' dall'array teachers
-const indexEd = teachers.indexOf('Ed');  // non riesco a farlo =(
+
